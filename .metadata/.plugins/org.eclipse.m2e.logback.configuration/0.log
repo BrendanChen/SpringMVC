@@ -7,3 +7,273 @@
 2017-07-26 17:11:11,554 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-07-26 17:11:11,569 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-07-26 17:11:11,571 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:28:16,919 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:28:18,016 [Worker-37] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0: files: _0.cfs _1.cfs _3.fdt _3.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:758) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:300) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:28:18,521 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:18,527 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-26 17:28:18,530 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:18,533 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:28:20,239 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:20,245 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-26 17:28:20,248 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:20,253 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:28:35,591 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:35,595 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-26 17:28:35,597 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:35,600 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:28:47,772 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-26 17:28:48,888 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:28:49,903 [Worker-35] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0: files: _0.cfs _1.cfs _3.fdt _3.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:758) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:300) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:398) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:28:50,306 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/main/java
+2017-07-26 17:28:50,307 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/main/resources
+2017-07-26 17:28:50,307 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/test/java
+2017-07-26 17:28:52,256 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SpringMVC
+2017-07-26 17:28:52,274 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-07-26 17:28:55,923 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:55,926 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-26 17:28:55,944 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:28:55,947 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:28:55,947 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVC
+2017-07-26 17:28:55,948 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVC
+2017-07-26 17:28:55,958 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:29:36,442 [Worker-45] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to remove SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\_2.cfs (系統找不到指定的檔案。)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_92]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_92]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_92]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.CompoundFileReader.<init>(CompoundFileReader.java:70) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:321) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3363) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3408) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.DefaultIndexerEngine.remove(DefaultIndexerEngine.java:179) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.deleteArtifactFromIndex(DefaultNexusIndexer.java:350) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.removeDocument(NexusIndexManager.java:619) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:761) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:29:41,525 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:29:41,528 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:29:42,789 [Worker-45] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0: files: _0.cfs _1.cfs _3.fdt _3.fdx _3.fnm _3.frq _3.nrm _3.prx _3.tii _3.tis _4.fdt _4.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:766) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:300) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:29:43,341 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:29:43,344 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-26 17:29:43,355 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:29:43,358 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:29:45,318 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:29:46,767 [Worker-35] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0: files: _0.cfs _1.cfs _3.fdt _3.fdx _3.fnm _3.frq _3.nrm _3.prx _3.tii _3.tis _4.fdt _4.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:758) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:29:47,601 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:29:47,606 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-26 17:29:47,608 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:29:47,611 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
+2017-07-26 17:30:42,616 [Worker-45] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to remove SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\_2.cfs (系統找不到指定的檔案。)
+	at java.io.RandomAccessFile.open0(Native Method) ~[na:1.8.0_92]
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[na:1.8.0_92]
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[na:1.8.0_92]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput$Descriptor.<init>(FSDirectory.java:552) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory$FSIndexInput.<init>(FSDirectory.java:582) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.store.FSDirectory.openInput(FSDirectory.java:488) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.CompoundFileReader.<init>(CompoundFileReader.java:70) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.initialize(SegmentReader.java:321) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:306) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentReader.get(SegmentReader.java:236) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DocumentsWriter.applyDeletes(DocumentsWriter.java:915) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.applyDeletes(IndexWriter.java:4339) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3579) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3450) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3363) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3408) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.DefaultIndexerEngine.remove(DefaultIndexerEngine.java:179) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.deleteArtifactFromIndex(DefaultNexusIndexer.java:350) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.removeDocument(NexusIndexManager.java:619) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:761) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:31:32,261 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:SpringMVC:0.0.1-SNAPSHOT @ D:\workspace7\SpringMVC\pom.xml.
+2017-07-26 17:31:33,909 [Worker-28] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add SpringMVC/SpringMVC/0.0.1-SNAPSHOT/SpringMVC-0.0.1-SNAPSHOT.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\workspace7\.metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0: files: _0.cfs _1.cfs _3.fdt _3.fdx _3.fnm _3.frq _3.nrm _3.prx _3.tii _3.tis _4.fdt _4.fdx _4.fnm _4.frq _4.nrm _4.prx _4.tii _4.tis _5.fdt _5.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.7.0.20160603-1931/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.mavenProjectChanged(NexusIndexManager.java:766) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:300) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:252) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:168) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:136) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob$1.doCreateMavenProjects(ImportMavenProjectsJob.java:68) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob.runInWorkspace(ImportMavenProjectsJob.java:77) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-26 17:31:34,434 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/main/java
+2017-07-26 17:31:34,434 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/main/resources
+2017-07-26 17:31:34,435 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/test/java
+2017-07-26 17:31:35,415 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2017-07-26 17:31:38,885 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:31:38,889 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-26 17:31:38,911 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-26 17:31:38,914 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace7\SpringMVC\src\test\resources
